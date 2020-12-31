@@ -14,6 +14,29 @@ header{
   margin-top: 65px;
 }
 
+button{
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #2F65F8;
+  color: white;
+  border-style: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 15px 1px rgba(59, 59, 59, 0.2);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+button:hover{
+  background-color: #6C9BFF;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 nav{
   display: flex;
   align-items: center;
@@ -107,22 +130,7 @@ h1{
 }
 
 .firstCTA{
-  width: 200px;
-  background-color: #2F65F8;
-  color: white;
-  border-style: none;
-  border-radius: 4px;
-  cursor: pointer;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.firstCTA:hover{
-  background-color: #6C9BFF;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
+  width: 200px; 
 }
 
 /* Section one end */
@@ -165,6 +173,12 @@ h1{
 
 .seeHow:hover > img{
   filter:grayscale(100%) sepia(100%) hue-rotate(125deg);
+}
+
+a > img{
+  padding-top: 10px;
+  position: relative;
+  top: 2px;
 }
 
 .testimonialContainer{
@@ -230,9 +244,7 @@ h1{
   margin-top: 55px;
 }
 
-a > img{
-  padding-top: 10px;
-}
+
 
 
 
@@ -243,4 +255,45 @@ a > img{
 .sectionThree{
   background-color: #575988;
   width: 100%;
+  height: 320px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 100px 120px 0 80px;
+  box-sizing: border-box;
+}
+
+.sectionThreeLeft{
+  width: 533px;
+  height: 137px;
+}
+
+.sectionThreeLeft > h2 {
+  margin: 0 auto;
+  font-family: Raleway;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.sectionThreeLeft > p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.sectionThreeRight{
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionThreeRight > input{
+  width: 480px;
+  height: 48px;
+}
+
+.sectionThreeRight > button {
+  width: 200px;
+  height: 48px;
+  margin-top: 18px;
 }

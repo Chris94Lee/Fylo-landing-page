@@ -67,7 +67,12 @@ h1{
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  width: 1440px;
+}
+
+@media only screen and (min-width: 1440px){
+  .main{
+    width: 1440px;
+  }
 }
 
 /* Section one start */
@@ -297,3 +302,77 @@ a > img{
   height: 48px;
   margin-top: 18px;
 }
+
+/* Section three end */
+
+/* Footer start */
+
+footer{
+  background-color: #07043B;
+  color: white;
+  width: 100%;
+  height: 391px;
+  padding-left: 80px;
+  padding-right: 261px;
+  box-sizing: border-box;
+}
+
+footer > img{
+  margin-top: 92px;
+}
+
+.footerContent{
+  display: flex;
+  flex-direction: row;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.footerLeft{
+  min-width: 222px;
+}
+
+.phone > img{
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
+}
+
+.footerEmail > img{
+  margin-right: 9px;
+  position: relative;
+  top: 3px;
+}
+
+.footerMiddle{
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  margin-left: 220px;
+}
+
+.linksLeft, .linksRight{
+  display: flex;
+  flex-direction: column;
+  width: 89px;
+}
+
+.linksLeft{
+  margin-right: 190px;
+  width: 69px;
+}
+
+.footerRight{
+  min-width: 160px;
+  margin-left: 185px;
+}
+
+.footerRight > img {
+  margin-right: 12px;
+}
+
+/* TODO: - Add mobile CSS

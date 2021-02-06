@@ -254,7 +254,6 @@ a > img{
 
 .illustration2{
   width: 542px;
-  height: 409px;
   margin-top: 55px;
 }
 
@@ -322,7 +321,6 @@ footer{
   width: 100%;
   height: 391px;
   padding-left: 80px;
-  padding-right: 261px;
   box-sizing: border-box;
 }
 
@@ -361,7 +359,7 @@ a{
   display: flex;
   flex-direction: row;
   width: 350px;
-  margin-left: 220px;
+  margin-left: 15%;
 }
 
 .linksLeft, .linksRight{
@@ -371,13 +369,13 @@ a{
 }
 
 .linksLeft{
-  margin-right: 190px;
+  margin-right: 15%;
   width: 69px;
 }
 
 .footerRight{
   min-width: 160px;
-  margin-left: 185px;
+  margin-left: 15%;
 }
 
 .footerRight > img {
@@ -405,7 +403,58 @@ a{
     width:50%;
   }
 
-  .illustration1{
+  .illustration1, .illustration2{
     width: 50%;
+  }
+
+
+  .sectionTwo{
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+  }
+
+  .sectionTwoContent{
+    width: 50%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+
+  .sectionOne{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .sectionOneContent{
+    width: 100%;
+    text-align: center;
+  }
+
+  .inputAndError{
+    flex-direction: column;
+  }
+  
+  .illustration1, .illustration2{
+    width: 90%;
+  }
+
+  .sectionTwo{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .sectionTwoContent{
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+
+
+
+  .footerContent{
+    flex-direction: column;
   }
 }

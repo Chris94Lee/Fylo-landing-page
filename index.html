@@ -33,19 +33,18 @@
           Access them wherever you need, share and collaborate with friends,
           family, and co-workers.
         </p>
-        <div class="form">
+        <form action="" class="form" id="form" novalidate>
           <div class="inputAndError">
-            <input type="email" id="email" aria-label="Email input" placeholder="Enter your email...">
-            <br>
-            <span id="error"></span>
+            <input type="email" id="fieldOneEmail" aria-label="Email input" placeholder="Enter your email...">
           </div>
-          <button class="firstCTA">Get Started</button>
-        </div>
+          <button class="firstCTA" type="submit" id="submit">Get Started</button>
+        </form>
+        <span id="fieldOneError"></span>
       </div>
       <img src="images/illustration-1.svg" alt="Illustration" class="illustration1">
     </div>
 
-    <img src="images/bg-curve-desktop.svg" alt="Curve image for the background">
+    <img src="images/bg-curve-desktop.svg" alt="Curve image for the background" class="curvedImage">
 
     <div class="sectionTwo">
       <div class="sectionTwoContent">
@@ -119,6 +118,8 @@
       </div>
     </footer>
   </div>
+  <script src="script.js"></script>
 </body>
+
 
 </html>

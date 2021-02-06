@@ -89,6 +89,11 @@ h1{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 640px;
+}
+
+.form1{
+  width: 100%;
 }
 
 .sectionOneContent > h1{
@@ -100,7 +105,7 @@ h1{
   line-height: 24px;
   letter-spacing: 0.53px;
   margin-top: 0px;
-  width: 585px;
+  width: 91%;
 }
 
 .illustration1{
@@ -139,6 +144,10 @@ h1{
 }
 
 /* Section one end */
+
+.curvedImage{
+  width: 100%;
+}
 
 /* Section two start */
 
@@ -375,4 +384,28 @@ a{
   margin-right: 12px;
 }
 
-/* TODO: - Add mobile CSS
+
+@media only screen and (max-width: 1440px){
+
+  header{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+  }
+  
+  .sectionOne{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+  }
+
+  .sectionOneContent{
+    width:50%;
+  }
+
+  .illustration1{
+    width: 50%;
+  }
+}
